@@ -2,7 +2,7 @@
 $servername="localhost";
 $username="root";
 $password="root";
-$db_name="shop";
+$db_name="MusicShop";
 $db=mysqli_connect($servername, $username, $password, $db_name);
 
 $id=$_POST['id'];

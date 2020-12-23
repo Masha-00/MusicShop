@@ -11,10 +11,11 @@
     <div class="product-list">
     <h3><?php echo $drum["name"]; ?></h3>
     <p><?php echo $drum["description"]; ?></p>
-        <span class="price"><?php echo $drum["price"]; ?></span>
+        <span class="price"><?php echo $drum["price"]; ?> грн</span>
         <a href="" class="button">В корзину</a>
     </div>
     </div>
 <?php endforeach; ?>
 </section>
+<div style="margin-top: 40%;"></div>
 <?php include 'footer.php'; ?>

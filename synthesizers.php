@@ -12,10 +12,11 @@
     <div class="product-list">
     <h3><?php echo $sintez["name"]; ?></h3>
     <p><?php echo $sintez["description"]; ?></p>
-        <span class="price"><?php echo $sintez["price"]; ?></span>
+        <span class="price"><?php echo $sintez["price"]; ?> грн</span>
         <a href="" class="button">В корзину</a>
     </div>
     </div>
 <?php endforeach; ?>
 </section>
+<div style="margin-top: 40%;"></div>
 <?php include 'footer.php'; ?>

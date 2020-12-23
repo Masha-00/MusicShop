@@ -12,10 +12,11 @@
     <div class="product-list">
     <h3><?php echo $loadspeak["name"]; ?></h3>
     <p><?php echo $loadspeak["description"]; ?></p>
-        <span class="price"><?php echo $loadspeak["price"]; ?></span>
+        <span class="price"><?php echo $loadspeak["price"]; ?> грн</span>
         <a href="" class="button">В корзину</a>
     </div>
     </div>
 <?php endforeach; ?>
 </section>
+<div style="margin-top: 40%;"></div>
 <?php include 'footer.php'; ?>

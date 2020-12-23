@@ -12,10 +12,12 @@
     <div class="product-list">
     <h3><?php echo $micro["name"]; ?></h3>
     <p><?php echo $micro["description"]; ?></p>
-        <span class="price"><?php echo $micro["price"]; ?></span>
+        <span class="price"><?php echo $micro["price"]; ?> грн</span>
         <a href="" class="button">В корзину</a>
     </div>
     </div>
 <?php endforeach; ?>
-</srction>
+</section>
+<div style="margin-top: 40%;">
 <?php include 'footer.php'; ?>
+</div>

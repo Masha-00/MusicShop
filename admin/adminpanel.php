@@ -33,7 +33,9 @@
           image= '{$_POST['image']}',
           new= '{$_POST['new']}'
           WHERE id={$_GET['red_id']}");
-      } else {
+      } 
+      else 
+      {
           //Иначе вставляем данные, подставляя их в запрос
           $sql = mysqli_query($db, "INSERT INTO product (name,category,price,description,image,new) 
           VALUES ('{$_POST['name']}', '{$_POST['category']}','{$_POST['price']}', '{$_POST['description']}', 
@@ -48,12 +50,15 @@
       }
     }
 
-    if (isset($_GET['del_id'])) { //проверяем, есть ли переменная
+    if (isset($_GET['del_id'])) 
+    { //проверяем, есть ли переменная
       //удаляем строку из таблицы
       $sql = mysqli_query($db, "DELETE FROM product WHERE id = {$_GET['del_id']}");
-      if ($sql) {
+      if ($sql)
+      {
         echo "<p>Товар удален.</p>";
-      } else {
+      } else 
+      {
         echo '<p>Произошла ошибка: ' . mysqli_error($db) . '</p>';
       }
     }

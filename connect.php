@@ -2,7 +2,7 @@
     $servername="localhost";
     $username="root";
     $password="root";
-    $db_name="shop";
+    $db_name="MusicShop";
     $db=mysqli_connect($servername, $username, $password, $db_name);
     if (!$db) {
         echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();

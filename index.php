@@ -4,7 +4,6 @@
 ?>
 
 <body>
-
 <div class="sl_ctr">
   <div class="sldr">  
     <img src="img/Mikrofon.jpg" alt="">
@@ -25,15 +24,18 @@ while($row=$results->fetch_assoc())
   <div class="product-list">
     <h3>'.$row["name"].'</h3>
     <p>'.$row["description"].'</p>
-      <span class="price">'.$row["price"].'</span>
+      <span class="price">'.$row["price"].'</span>  
       <a href="" class="button">В корзину</a>
   </div>
 </div>
   ';
 }
-include 'footer.php';
 ?>
 </section>
 <!--<script src="JS/main.js"></script>-->
+<div style="margin-top: 80%;"></div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>
